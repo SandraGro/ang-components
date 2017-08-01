@@ -6,7 +6,7 @@ var WatchLiveReloadPlugin = require('webpack-watch-livereload-plugin');
 
 module.exports = {
 	entry: [
-		'./src/app.module.js',
+		'./src/app.js',
 	],
 	output: {
 		filename: 'webpack.bundle.js',
