@@ -1,10 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!--Left Side Bar-->
+<md-sidenav md-component-id="uno-sidebar" class="md-sidenav-left"
+			md-theme="sideBarTheme" flex>
+	<!-- Sidebar Header -->
+	<md-toolbar layout="row" layout-padding>
+		<div class="md-toolbar-tools">
+			<h2 flex="noshrink">Left Navbar Title</h2>
+			<span flex></span>
+			<md-button class="md-icon-button" ng-click="vm.toggleSideBar()">
+				<md-icon>close</md-icon>
+			</md-button>
+		</div>
+	</md-toolbar>
+	<!-- Sidebar Menu -->
+	<md-list>
+		<md-subheader>First SubHeader</md-subheader>
+		<md-divider></md-divider>
+		<md-list-item>
+			<a href="#" flex layout-fill>Option 1</a>
+		</md-list-item>
+		<md-list-item>
+			<a href="#" flex layout-fill>Option 2</a>
+		</md-list-item>
+		<md-subheader>Second SubHeader</md-subheader>
+		<md-divider></md-divider>
+		<md-list-item>
+			<a href="#" flex layout-fill>Option 3</a>
+		</md-list-item>
+	</md-list>
+</md-sidenav>
+
+<!--Top Nav Bar-->
+<md-toolbar md-whiteframe="4" id="top-navbar">
+	<div class="md-toolbar-tools">
+		<md-button class="md-icon-button" ng-click="vm.toggleSideBar()">
+			<md-icon> menu </md-icon>
+		</md-button>
+		<h2>{{ vm.title }}</h2>
+		<span flex></span>
+		<md-icon> account_circle </md-icon>
+		<h5>{{ vm.username }}</h5>
+	</div>
+</md-toolbar>
+
+<!-- Content -->
+<md-content id="main-container" md-scroll-y>
+	<div ui-view></div>
+</md-content>
