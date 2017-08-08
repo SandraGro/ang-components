@@ -1,15 +1,15 @@
 <md-card>
-    <img src="" alt="Company Logo"/>
+    <img src="#" alt="Company Logo"/>
     <md-card-title>
         <md-card-title-text>
-            <span class="md-headline">Title text</span>
+            <span class="md-headline">{{vm.title}}</span>
         </md-card-title-text>
     </md-card-title>
     <md-card-content>
-        <p>Some text</p>
+        <p>{{vm.description}}</p>
     </md-card-content>
     <md-card-actions layout="row" layout-align="end center">
-        <md-button>Cancel</md-button>
-        <md-button>Subscribe</md-button>
+        <md-button ng-click="vm.onCancel(vm.subscription.code)">Cancel</md-button>
+        <md-button ng-click="vm.onSubscribe(vm.subscription.code)">Subscribe</md-button>
     </md-card-actions>
 </md-card>

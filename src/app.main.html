@@ -46,8 +46,14 @@
 <md-content id="main-container" md-scroll-y>
 	<div layout="row" layout-padding>
 		<div flex layout="row">
-			<subscription-card flex="50"></subscription-card>
-			<subscription-card flex="50"></subscription-card>
+			<subscription-card
+					flex="50"
+					ng-repeat="subscription in vm.subscriptions"
+					title="subscription.title"
+					description="subscription.description"
+					on-cancel="vm.cancelSubscription(subscription.code)"
+					on-subscribe="vm.subscribe(subscription.code)"
+			/>
 		</div>
 	</div>
 </md-content>
