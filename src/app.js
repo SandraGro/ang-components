@@ -13,6 +13,8 @@ import './app.scss';
 import configuration from './configs/app.config';
 import routing from './configs/app.routing';
 import { AppComponent } from './app.component';
+import { SubscriptionCard } from './components/subscription-card/subscription-card.component';
+import { HelpDialog } from './components/help-dialog/help-dialog.component';
 
 angular
     .module('app.module', [
@@ -24,6 +26,8 @@ angular
     ])
     .config(configuration)
     .config(routing)
-    .component('appComponent', AppComponent);
+    .component('appComponent', AppComponent)
+    .component('subscriptionCard', SubscriptionCard)
+    .component('helpDialog', HelpDialog);
 
 document.addEventListener('DOMContentLoaded', () => angular.bootstrap(document, ['app.module']));
