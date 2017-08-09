@@ -4,9 +4,5 @@ import template from './app.main.html';
 export const AppComponent = {
     controller,
     controllerAs: 'vm',
-    replace: true,
-    template,
-    bindings: {
-        username: '@'
-    }
+    template
 };

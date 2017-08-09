@@ -2,7 +2,7 @@
   "name": "ang-components",
   "version": "1.0.0",
   "description": "Simple AngularJS scaffolding to practice components creation",
-  "main": "app.module.js",
+  "main": "app.js",
   "scripts": {
     "build": "webpack --config webpack.config.js --watch",
     "start": "webpack-dev-server --config webpack.config.js --open"

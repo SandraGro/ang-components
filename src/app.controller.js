@@ -2,6 +2,7 @@ class AppMainCtrl {
 
 	constructor($mdSidenav) {
 		this.title = 'App Title';
+		this.username = 'Karla Martin';
 		this.$mdSidenav = $mdSidenav
 	}
 
