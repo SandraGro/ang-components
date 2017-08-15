@@ -30,7 +30,7 @@
 </md-sidenav>
 
 <!--Top Nav Bar-->
-<md-toolbar md-whiteframe="4" id="top-navbar">
+<md-toolbar md-whiteframe="4" id="top-navbar" flex="nogrow">
 	<div class="md-toolbar-tools">
 		<md-button class="md-icon-button" ng-click="vm.toggleSideBar()">
 			<md-icon> menu </md-icon>
@@ -43,8 +43,13 @@
 </md-toolbar>
 
 <!-- Content -->
-<md-content id="main-container" md-scroll-y>
-	<div layout="row" layout-padding layout-align="center start">
-		<div flex="nogrow">[Provisional Main Container]</div>
+<md-content id="main-container" layout="column" md-scroll-y flex>
+	<div flex layout="column">
+		<div flex>
+			[Aqui van los subscription cards]
+		</div>
+		<div flex="nogrow">
+			[Este es un bottom div]
+		</div>
 	</div>
 </md-content>
