@@ -9,7 +9,7 @@
         <p>{{vm.description}}</p>
     </md-card-content>
     <md-card-actions layout="row" layout-align="end center">
-        <md-button>Cancel</md-button>
-        <md-button>Subscribe</md-button>
+        <md-button ng-click="vm.cancel()">Cancel</md-button>
+        <md-button ng-click="vm.subscribe($event, vm.title)">Subscribe</md-button>
     </md-card-actions>
 </md-card>

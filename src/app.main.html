@@ -50,7 +50,8 @@
 					ng-repeat="subscription in vm.subscriptions"
 					title="subscription.title"
 					logo="subscription.logo"
-					description="subscription.description">
+					description="subscription.description"
+					on-subscribe="vm.subscribe($event, subscription.title)">
 			</subscription-card>
 		</div>
 		<div flex="nogrow">
