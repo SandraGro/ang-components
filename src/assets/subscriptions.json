@@ -1,0 +1,16 @@
+{
+  "subscriptions": [
+			{
+				"code": "uno",
+				"title": "Unosquare",
+                "logo": "unosquare_logo.png",
+				"description": "This is a test description for Unosquare"
+			},
+			{
+				"code": "vee",
+				"title": "Veelo",
+                "logo": "veelo_logo.png",
+				"description": "This is a test description for Veelo"
+			}
+		]
+}

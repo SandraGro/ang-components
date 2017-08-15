@@ -9,6 +9,7 @@ import 'angular-material/angular-material.scss';
 import 'roboto-fontface/css/roboto/sass/roboto-fontface-regular.scss';
 
 import './app.scss';
+import Components from './components/components.module';
 
 import configuration from './configs/app.config';
 import routing from './configs/app.routing';
@@ -20,7 +21,8 @@ angular
         'ngMdIcons',
         'ngAnimate',
         'ngMessages',
-        'ui.router'
+        'ui.router',
+        Components
     ])
     .config(configuration)
     .config(routing)

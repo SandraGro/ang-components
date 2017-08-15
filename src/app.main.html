@@ -45,8 +45,13 @@
 <!-- Content -->
 <md-content id="main-container" layout="column" md-scroll-y flex>
 	<div flex layout="column">
-		<div flex>
-			[Aqui van los subscription cards]
+		<div flex layout="row">
+			<subscription-card
+					ng-repeat="subscription in vm.subscriptions"
+					title="subscription.title"
+					logo="subscription.logo"
+					description="subscription.description">
+			</subscription-card>
 		</div>
 		<div flex="nogrow">
 			[Este es un bottom div]

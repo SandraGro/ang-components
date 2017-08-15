@@ -1,9 +1,23 @@
 class AppMainCtrl {
 
-	constructor($mdSidenav) {
+	constructor($http, $mdSidenav) {
 		this.title = 'App Title';
 		this.username = 'Karla Martin';
-		this.$mdSidenav = $mdSidenav
+		this.subscriptions = [];
+		this.$mdSidenav = $mdSidenav;
+		this.$http = $http;
+		this.loadSubscriptions();
+	}
+
+	loadSubscriptions() {
+		const { $http } = this;
+		$http.get('./assets/subscriptions.json')
+            .then((response) => {
+                this.subscriptions = response.data.subscriptions;
+            })
+            .catch(() => {
+                this.subscriptions = [];
+            })
 	}
 
 	toggleSideBar() {
@@ -12,5 +26,5 @@ class AppMainCtrl {
 
 }
 
-AppMainCtrl.$inject = ['$mdSidenav'];
+AppMainCtrl.$inject = ['$http', '$mdSidenav'];
 export default AppMainCtrl;
