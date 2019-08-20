@@ -45,7 +45,7 @@
 <!-- Content -->
 <md-content id="main-container" layout="column" md-scroll-y flex>
 	<div flex layout="column">
-		<div flex layout="row">
+		<div flex="grow" layout="row">
 			<subscription-card
 					ng-repeat="subscription in vm.subscriptions"
 					title="subscription.title"
@@ -54,11 +54,11 @@
 					on-subscribe="vm.subscribe($event, subscription.title)">
 			</subscription-card>
 		</div>
-		<div flex layout="column">
-			<h1 text-capitalize>Title</h1>
-			<p text-capitalize>Paragraph</p>
+		<div flex="grow" layout="column">
+			<h1 text-bold>Title</h1>
+			<p text-bold>Paragraph</p>
 		</div>
-		<div flex="nogrow">
+		<div flex="grow">
 			[Este es un bottom div]
 		</div>
 	</div>

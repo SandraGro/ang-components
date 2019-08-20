@@ -1,4 +1,4 @@
-export default function TextCapitalize() {
+export default function TextBold() {
     return {
         restrict: 'A',
         link: (scope, element) => {

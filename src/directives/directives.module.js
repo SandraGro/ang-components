@@ -1,6 +1,6 @@
 import angular from 'angular';
-import TextCapitalize from './text-capitalize/text-capitalize.directive';
+import TextBold from './text-bold/text-bold.directive';
 
 export default angular.module('custom.directives', [])
-    .directive('textCapitalize', TextCapitalize)
+    .directive('textBold', TextBold)
     .name;
