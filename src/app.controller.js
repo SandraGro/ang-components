@@ -11,7 +11,7 @@ class AppMainCtrl {
 		this.contact = {
 			name: 'Karla Martin',
 			position: 'Software Engineer'
-		}
+		};
 		this.loadSubscriptions();
 	}
 
