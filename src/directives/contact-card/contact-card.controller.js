@@ -3,7 +3,9 @@ import SubscriptionCardCtrl from "../../components/subscription-card/subscriptio
 class ContactCardCtrl {
 
     //TODO: Add some method binding
-    constructor(){}
+    constructor(){
+        this.location = 'Guadalajara MX';
+    }
 }
 
 SubscriptionCardCtrl.$inject = ['$scope'];

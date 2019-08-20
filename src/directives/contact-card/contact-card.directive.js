@@ -6,6 +6,8 @@ export default function ContactCard() {
         restrict: 'E',
         template,
         controller,
+        controllerAs: 'vm',
+        bindToController: true,
         scope: {
             company: '@',
             name: '=',
