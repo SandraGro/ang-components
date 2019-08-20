@@ -8,6 +8,10 @@ class AppMainCtrl {
 		this.$mdDialog = $mdDialog;
 		this.$mdToast = $mdToast;
 		this.$http = $http;
+		this.contact = {
+			name: 'Karla Martin',
+			position: 'Software Engineer'
+		}
 		this.loadSubscriptions();
 	}
 
