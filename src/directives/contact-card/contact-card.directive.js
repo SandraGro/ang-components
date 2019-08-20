@@ -5,6 +5,11 @@ export default function ContactCard() {
     return {
         restrict: 'E',
         template,
-        controller
+        controller,
+        scope: {
+            company: '@',
+            name: '=',
+            position: '<'
+        }
     }
 }

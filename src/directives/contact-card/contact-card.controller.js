@@ -2,11 +2,8 @@ import SubscriptionCardCtrl from "../../components/subscription-card/subscriptio
 
 class ContactCardCtrl {
 
-    constructor($scope){
-        $scope.name = 'Karla Martin';
-        $scope.position = 'Software Engineer';
-        $scope.company = 'Unosquare';
-    }
+    //TODO: Add some method binding
+    constructor(){}
 }
 
 SubscriptionCardCtrl.$inject = ['$scope'];
