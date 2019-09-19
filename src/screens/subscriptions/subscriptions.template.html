@@ -1,3 +1,18 @@
 <div layout="row">
-    [List of subscriptions]
+    <md-content id="main-container" layout="column" md-scroll-y flex>
+    	<div flex layout="column">
+    		<div flex layout="row">
+    			<subscription-card
+    					ng-repeat="subscription in vm.subscriptions"
+    					title="subscription.title"
+    					logo="subscription.logo"
+    					description="subscription.description"
+    					on-subscribe="vm.subscribe($event, subscription.title)">
+    			</subscription-card>
+    		</div>
+    		<div flex="nogrow">
+    			[Este es un bottom div]
+    		</div>
+    	</div>
+    </md-content>
 </div>
