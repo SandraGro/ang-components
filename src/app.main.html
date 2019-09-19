@@ -15,16 +15,16 @@
 	<md-list>
 		<md-subheader>First SubHeader</md-subheader>
 		<md-divider></md-divider>
-		<md-list-item>
-			<a href="#" flex layout-fill>Option 1</a>
+		<md-list-item ui-sref="home" ng-click="vm.toggleSideBar()">
+			Home Page
 		</md-list-item>
-		<md-list-item>
-			<a href="#" flex layout-fill>Option 2</a>
+		<md-list-item ui-sref="signup" ng-click="vm.toggleSideBar()">
+			Sign up
 		</md-list-item>
 		<md-subheader>Second SubHeader</md-subheader>
 		<md-divider></md-divider>
-		<md-list-item>
-			<a href="#" flex layout-fill>Option 3</a>
+		<md-list-item ui-sref="subscriptions" ng-click="vm.toggleSideBar()">
+			Subscriptions
 		</md-list-item>
 	</md-list>
 </md-sidenav>
@@ -43,12 +43,4 @@
 </md-toolbar>
 
 <!-- Content -->
-<md-content id="main-container" layout="column" md-scroll-y flex>
-	<div flex layout="column">
-		<div flex layout="row">
-		</div>
-		<div flex="nogrow">
-			[Este es un bottom div]
-		</div>
-	</div>
-</md-content>
+<div ui-view layout="column" layout-fill></div>
