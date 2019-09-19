@@ -11,7 +11,6 @@ module.exports = {
 	output: {
 		filename: 'webpack.bundle.js',
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/'
 	},
 	devtool: 'inline-source-map',
 	devServer: {
