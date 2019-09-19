@@ -3,13 +3,14 @@ import controller from './subscription-card.controller';
 
 export const SubscriptionCard = {
     template,
+    replace: true,
     controller,
     controllerAs: 'vm',
     bindings: {
-        title: '<',
         logo: '<',
+        title: '<',
         description: '<',
-        onSubscribe: '&'
+        onSubscribe: '&',
+        onCancel: '&'
     }
 };
-
