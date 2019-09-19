@@ -30,7 +30,7 @@ class AppMainCtrl {
 	    this.$mdSidenav('uno-sidebar').toggle();
 	}
 
-	subscribe(ev, name){
+	subscribe(ev, name) {
 		const {$mdDialog, $mdToast} = this;
 		if(name == 'Unosquare') {
 			var confirm = $mdDialog.confirm()
@@ -41,7 +41,7 @@ class AppMainCtrl {
 			  .cancel('No');
 
 			$mdDialog.show(confirm)
-		} else{
+		} else {
 			$mdToast.show(
 			  $mdToast.simple()
 				.textContent('Subscription: ' + name)
@@ -49,9 +49,7 @@ class AppMainCtrl {
 				.hideDelay(3000)
 			);
 		}
-
 	}
-
 }
 
 AppMainCtrl.$inject = ['$http', '$mdSidenav', '$mdDialog', '$mdToast'];
