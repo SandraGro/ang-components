@@ -10,6 +10,7 @@ import 'roboto-fontface/css/roboto/sass/roboto-fontface-regular.scss';
 
 import './app.scss';
 import Components from './components/components.module';
+import Directives from './directives/directives.module';
 
 import configuration from './configs/app.config';
 import routing from './configs/app.routing';
@@ -22,7 +23,8 @@ angular
         'ngAnimate',
         'ngMessages',
         'ui.router',
-        Components
+        Components,
+        Directives
     ])
     .config(configuration)
     .config(routing)
