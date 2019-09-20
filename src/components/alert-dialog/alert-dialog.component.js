@@ -1,0 +1,1 @@
+//TODO: Create component declaration: Output Catch Binding Example
