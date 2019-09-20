@@ -48,6 +48,6 @@ export default function configuration($mdThemingProvider) {
 		.accentPalette('pink')
 		.warnPalette('orange');
 	$mdThemingProvider.theme('sideBarTheme')
-		.primaryPalette('lime')
+		.primaryPalette('blue-grey')
 		.accentPalette('unoSquareGrey');
 };
