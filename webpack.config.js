@@ -23,6 +23,11 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
+            {
                 test: /\.html$/,
                 exclude: /node_modules/,
                 loader: 'html-loader'
@@ -49,5 +54,12 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    resolve: {
+        modules: ['node_modules'],
+        extensions: ['.js', '.json', '.css', '.scss']
+    },
+    resolveLoader: {
+        modules: ['node_modules']
+    },
 };
