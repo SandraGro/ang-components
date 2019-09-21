@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const WatchLiveReloadPlugin = require('webpack-watch-livereload-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: [
@@ -18,6 +18,7 @@ module.exports = {
         hot: true,
         open: true,
         port: 1305,
+        historyApiFallback: true,
     },
     module: {
         rules: [
@@ -48,12 +49,5 @@ module.exports = {
                 ]
             }
         ]
-    },
-    plugins: [
-        new WatchLiveReloadPlugin({
-            files: [
-                './src/**/*.html'
-            ],
-        })
-    ]
+    }
 };
