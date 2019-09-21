@@ -1,5 +1,3 @@
-import SubscriptionCardCtrl from "../../components/subscription-card/subscription-card.controller";
-
 class ContactCardCtrl {
 
     //TODO: Add some method binding
@@ -8,5 +6,5 @@ class ContactCardCtrl {
     }
 }
 
-SubscriptionCardCtrl.$inject = ['$scope'];
+ContactCardCtrl.$inject = ['$scope'];
 export default ContactCardCtrl

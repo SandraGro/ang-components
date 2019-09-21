@@ -1,6 +1,6 @@
 class SubscriptionsScreenCtrl {
 
-    constructor($http, $mdSidenav, $mdDialog, $mdToast) {
+    constructor($http, $mdDialog, $mdToast) {
         this.subscriptions = [];
         this.$mdDialog = $mdDialog;
         this.$mdToast = $mdToast;
