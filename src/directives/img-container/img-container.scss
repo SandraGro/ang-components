@@ -1,0 +1,44 @@
+/*
+.render-block{
+  background-color: red;
+  border: 10px blue dashed;
+
+  .img-block {
+    border: 10px yellow dashed;
+  }
+}
+
+@media print {
+  img-container{
+    page-break-after: always;
+  }
+
+  .render-block {
+    page-break-inside: avoid;
+    position: relative;
+  }
+}*/
+
+@media print {
+  .img-block{
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    figure {
+      background-color: black;
+      padding: 0;
+      break-inside: avoid;
+      position: relative;
+      margin: 0;
+
+      img {
+        margin: 0;
+        padding: 0;
+        break-inside: avoid;
+        position: relative;
+      }
+    }
+  }
+}
+
