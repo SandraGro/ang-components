@@ -32,3 +32,28 @@
 }
 
 @import 'directives/contact-card/contact-card.scss';
+@import 'directives/img-container/img-container.scss';
+
+.breaks{
+  img {
+    visibility: hidden;
+  }
+  &:nth-child(7) {
+    figure {
+      border: 5px yellow dotted;
+    }
+    background-color: red;
+  }
+  &:nth-child(8) {
+    figure {
+      border: 5px red dotted;
+    }
+    background-color: blue;
+  }
+  &:nth-child(9) {
+    figure {
+      border: 5px blue dotted;
+    }
+    background-color: yellow;
+  }
+}
