@@ -28,14 +28,15 @@
     figure {
       background-color: black;
       padding: 0;
-      break-inside: avoid;
       position: relative;
       margin: 0;
+      display: inline-block;
+      width: 100%;
+      page-break-inside: avoid;
 
       img {
         margin: 0;
         padding: 0;
-        break-inside: avoid;
         position: relative;
       }
     }
